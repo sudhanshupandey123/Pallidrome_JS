@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>PallindromeNumber</title>
+    </head>
+    <script>
+        //When we reverse a number and if it is equal to given number then that number is Pallindrome Number
+        let a=Number(prompt('Enter Your Number:'));
+        console.log(`Given Number is ${a}`)
+        let temp=a;
+        let rev=0;
+        while (a>0){
+            b=a%10;
+            rev=(rev*10)+b;
+            a=Math.floor(a/10);
+        }
+        console.log(`Reverse of the number is ${rev}`)
+        if (temp==rev){
+            console.log(`Given Number is Pallindrome Number`)
+        }
+        else{
+            console.log(`Given Number is Not a Pallindrome Number`)
+        }
+
+    </script>
+</html>
